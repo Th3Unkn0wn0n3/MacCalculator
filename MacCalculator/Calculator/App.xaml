@@ -1,0 +1,40 @@
+﻿<Application x:Class="MacCalculator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MacCalculator"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="numberButtonsColor" Color="#444444"/>
+        <SolidColorBrush x:Key="textColor" Color="White" />
+        <SolidColorBrush x:Key="operationButtonsColor" Color="Orange" />
+        <SolidColorBrush x:Key="additionalButtonsColor" Color="#333333" />
+        <SolidColorBrush x:Key="gridColor" Color="#222222" />
+
+        <Style TargetType="Button" x:Key="buttonBase">
+            <Setter Property="Foreground" Value="{StaticResource textColor}"/>
+            <Setter Property="FontSize" Value="20"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="numberButtons" BasedOn="{StaticResource buttonBase}">
+            <Setter Property="Background" Value="{StaticResource numberButtonsColor}" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="operationButtons" BasedOn="{StaticResource buttonBase}">
+            <Setter Property="Background" Value="{StaticResource operationButtonsColor}" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="additionalButtons" BasedOn="{StaticResource buttonBase}">
+            <Setter Property="Background" Value="{StaticResource additionalButtonsColor}" />
+        </Style>
+
+        <Style TargetType="Grid">
+            <Setter Property="Background" Value="{StaticResource gridColor}" />
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="{StaticResource textColor}"/>
+            <Setter Property="FontSize" Value="60"/>
+        </Style>
+
+    </Application.Resources>
+</Application>
