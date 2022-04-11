@@ -1,4 +1,4 @@
-<p align="center"><img src="/Calculator/Calculator/Calculator.ico" width="150"</p>
+<p align="center"><img src="MacCalculator/Calculator/Calculator.ico" width="150"</p>
 <h2 align="center">Mac Calculator</h2>
 <h4 align="center">A Mac OS calculator app clone for Windows</h4>
 
